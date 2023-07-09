@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "learning-fast-api"
+version = "0.1.0"
+description = ""
+authors = ["I wanna be real nerd <71207364+IwannabeRealnerD@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "learning_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.18"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start = "app:main"
